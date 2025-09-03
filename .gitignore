@@ -1,12 +1,33 @@
-# === Fichiers Python ===
+# === Garder uniquement ce qui est utile dans un module Odoo ===
+# (les autres fichiers seront ignorés par défaut)
+
+# Autoriser ces fichiers/dossiers
+!__manifest__.py
+!__init__.py
+!models/
+!views/
+!controllers/
+!data/
+!report/
+!security/
+!wizards/
+!static/
+
+# === Fichiers Python à ignorer ===
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
-*.pdb
-*.egg-info/
-*.egg
+
+# === Fichiers temporaires ===
 *.log
+*.pot
+*.mo
+*.po~
+*.swp
+*~
+*.bak
+*.tmp
 
 # === Environnements virtuels ===
 venv/
@@ -14,26 +35,6 @@ venv/
 .venv/
 env/
 ENV/
-
-# === Odoo spécifiques ===
-# Cache et sessions
-*.db
-*.dump
-*.zip
-*.tar.gz
-
-# Répertoires de données temporaires
-*.pot
-*.po~
-*.mo
-*.swp
-
-# Fichiers générés par Odoo
-/odoo/addons/*/static/lib/
-/odoo/addons/*/static/build/
-/odoo/addons/*/static/css/*.css.map
-/odoo/addons/*/static/scss/.sass-cache/
-/odoo/addons/*/static/src/js/*.bundle.js
 
 # === IDE/éditeurs ===
 .vscode/
@@ -45,7 +46,3 @@ ENV/
 .DS_Store
 Thumbs.db
 
-# === Sauvegardes ===
-*~
-*.bak
-*.tmp
