@@ -1,0 +1,51 @@
+# === Fichiers Python ===
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.egg-info/
+*.egg
+*.log
+
+# === Environnements virtuels ===
+venv/
+.env/
+.venv/
+env/
+ENV/
+
+# === Odoo spécifiques ===
+# Cache et sessions
+*.db
+*.dump
+*.zip
+*.tar.gz
+
+# Répertoires de données temporaires
+*.pot
+*.po~
+*.mo
+*.swp
+
+# Fichiers générés par Odoo
+/odoo/addons/*/static/lib/
+/odoo/addons/*/static/build/
+/odoo/addons/*/static/css/*.css.map
+/odoo/addons/*/static/scss/.sass-cache/
+/odoo/addons/*/static/src/js/*.bundle.js
+
+# === IDE/éditeurs ===
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# === OS ===
+.DS_Store
+Thumbs.db
+
+# === Sauvegardes ===
+*~
+*.bak
+*.tmp
